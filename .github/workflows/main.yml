@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: rebase changes in fork on top of changes from upstream
     steps:
-      - run: git clone maint https://github.com/jvals/git.git
+      - run: git clone https://github.com/jvals/git.git
       - run: git remote add upstream https://github.com/git/git
         working-directory: git
       - run: git fetch upstream
